@@ -17,7 +17,7 @@ create in the top level of our extension directory.
     if (!defined ('TYPO3_MODE')) die ('Access denied.');
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        $_EXTKEY,
+        'MyVendor.' . $_EXTKEY,
         'List',
         array('Inventory' => 'list')
     );
